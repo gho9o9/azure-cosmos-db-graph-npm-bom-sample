@@ -30,17 +30,17 @@ namespace BOMClient
 {
     class Program
     {
-        private static string GraphAccount => EnvVar("AZURE_COSMOSDB_GRAPHDB_ACCT");
+        private static string GraphAccount = "toootagremlin";
         private static string GraphHost = $"{GraphAccount}.gremlin.cosmos.azure.com";
         private static int    GraphPort = 443;
         private static bool   GraphEnableSSL = true;
-        private static string GraphDbName => EnvVar("AZURE_COSMOSDB_GRAPHDB_DBNAME");
-        private static string GraphPrimaryKey => EnvVar("AZURE_COSMOSDB_GRAPHDB_KEY");
-        private static string GraphDatabase => EnvVar("AZURE_COSMOSDB_GRAPHDB_DBNAME");
-        private static string GraphContainer => EnvVar("AZURE_COSMOSDB_GRAPHDB_GRAPH");
+        private static string GraphDbName = "dev";
+        private static string GraphPrimaryKey = "ympYJKVf4PUOLbAZpCXvvs4qaMd8zWNcn25Qqferrgz4rET0ru88A7ODbkLAatkin5FwXhPabKlpACDbEMQRvA==";
+        private static string GraphDatabase = "dev";
+        private static string GraphContainer = "npm3";
 
-        private static string GraphUri => EnvVar("AZURE_COSMOSDB_GRAPHDB_URI");
-        private static string GraphViewsColl => EnvVar("AZURE_COSMOSDB_GRAPHDB_VIEWS");
+        private static string GraphUri = "https://toootagremlin.documents.azure.com:443/";
+        private static string GraphViewsColl = "views";
 
         static async Task Main(string[] args)
         {
